@@ -1,9 +1,11 @@
 import './App.css';
 import IdCard from './components/IdCard';
+import Greetings from './components/Greetings';
 
 function App() {
   return (
     <div className="App">
+
       <div className="id-card">
         <IdCard
           lastName="Doe"
@@ -23,6 +25,12 @@ function App() {
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </div>
+
+      <div className="greetings">
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+      </div>
+
     </div>
   );
 }
