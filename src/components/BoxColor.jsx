@@ -1,8 +1,9 @@
 import './BoxColor.css';
 
-function BoxColor({ r, g, b }) {
+function BoxColor({ r, g, b, color }) {
   const divStyle = {
-    backgroundColor: `rgb(${r},${g},${b})`
+    backgroundColor: `rgb(${r},${g},${b})`,
+    color: `${color}`
   };
 
   return (

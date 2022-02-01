@@ -5,10 +5,13 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 
 function App() {
   return (
     <div className="App">
+
+{/* Iteration 1 - IdCard */}
       <div className="id-card">
         <IdCard
           lastName="Doe"
@@ -24,31 +27,30 @@ function App() {
           firstName="Obrien"
           gender="female"
           height={172}
-          birth={'1988-05-11'} // {new Date('1988-05-11')} --> 'new Date' renders some kind of error and no content displays
+          birth={'1988-05-11'} // {new Date("1988-05-11")} --> 'new Date' renders some kind of error and no content displays
           picture="https://randomuser.me/api/portraits/women/44.jpg"
         />
       </div>
 
+{/* Iteration 2 - Greetings */}
       <div className="greetings">
         <Greetings lang="de">Ludwig</Greetings>
         <Greetings lang="fr">François</Greetings>
       </div>
 
-      <div>
+{/* Iteration 3 - Random */}
         <Random min={1} max={6}>
           Random value between 1 and 6 =>
         </Random>
         <Random min={1} max={100}>
           Random value between 1 and 100 =>
         </Random>
-      </div>
-
-      <div>
+      
+{/* Iteration 4 - BoxColor */}
         <BoxColor r={255} g={0} b={0} color="white" />
         <BoxColor r={128} g={255} b={0} color="black" />
-      </div>
-
-      <div>
+      
+{/* Iteration 5 - CreditCard */}
         <CreditCard
           type="Visa"
           number="0123456789018845"
@@ -81,15 +83,36 @@ function App() {
           bgColor="#ddbb55"
           color="white"
         />
-      </div>
-      <div>
+
+{/* Iteration 6 - Rating */}
         <Rating>0</Rating>
         <Rating>1.49</Rating>
         <Rating>1.5</Rating>
         <Rating>3</Rating>
         <Rating>4</Rating>
         <Rating>5</Rating>
-      </div>
+
+{/* Iteration 7 - DriverCard */}
+        <DriverCard
+          name="Travis Kalanick"
+          rating={4.2}
+          img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+          car={{
+            model: "Toyota Corolla Altis",
+            licensePlate: "CO42DE"
+          }}
+        />
+
+        <DriverCard
+          name="Dara Khosrowshahi"
+          rating={4.9}
+          img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+          car={{
+            model: "Audi A3",
+            licensePlate: "BE33ER"
+          }}
+        />
+     
     </div>
   );
 }

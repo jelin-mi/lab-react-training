@@ -1,0 +1,35 @@
+.license {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    background-color: #445FB5;
+    margin: 10px;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.picture {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+
+.picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.info h1 {
+    margin: 0;
+}
