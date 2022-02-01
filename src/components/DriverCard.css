@@ -5,7 +5,6 @@
     background-color: #445FB5;
     margin: 10px;
     border-radius: 8px;
-    justify-content: center;
 }
 
 .picture {
@@ -13,13 +12,13 @@
     align-items: center;
     margin: 20px;
     justify-content: space-evenly;
+    padding-left: 50px;
 }
 
 .picture img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    
 }
 
 .info {
