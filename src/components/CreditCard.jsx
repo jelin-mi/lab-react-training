@@ -1,4 +1,6 @@
 import './CreditCard.css';
+import visa from '../assets/images/visa.png';
+import master from '../assets/images/master-card.svg';
 
 function CreditCard({
   type,
@@ -18,9 +20,9 @@ function CreditCard({
   return (
     <div className="credit-card" style={cardStyle}>
       <div className="type">
-        {type === 'Visa' && <img src="../images/visa.png" alt="visa" />}
+        {type === 'Visa' && <img src={visa} alt="visa" />}
         {type === 'Master Card' && (
-          <img src="../images/master-card.svg" alt="master" />
+          <img src={master} alt="master" />
         )}
       </div>
 
