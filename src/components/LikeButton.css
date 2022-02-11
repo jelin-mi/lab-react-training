@@ -1,0 +1,23 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.buttons button:hover {
+    background-color: darkturquoise;
+    color: #fff;
+  }
+
+.btn {
+  padding: 20px 30px;
+  border: darkturquoise 3px solid;
+  background-color: transparent;
+  color: darkturquoise;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
