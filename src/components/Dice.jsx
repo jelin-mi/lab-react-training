@@ -28,7 +28,7 @@ function Dice() {
 
     const changeDice = () => {
         // TODO set to empty dice first, then some random dice
-
+        setDice(initialDice);       // ??
 
         setTimeout(() => {
             setDice(handleRandom());
