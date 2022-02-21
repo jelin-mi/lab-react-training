@@ -1,14 +1,13 @@
-import { useState } from 'react';
+/* import { useState } from 'react'; */
 import data from '../data/berlin.json';
 
 function FaceBook() {
-  const [profiles, setProfiles] = useState(data);
-
-  const myProfiles = [...profiles];
+ /*  const [profiles, setProfiles] = useState(data);
+  const myProfiles = [...profiles]; */
 
   return (
     <>
-      {myProfiles.map((student) => {
+      {data.map((student) => {
         return (
           <div key={student.lastName} className="card">
             <div className='image'>
