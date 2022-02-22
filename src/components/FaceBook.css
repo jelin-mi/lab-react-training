@@ -1,0 +1,28 @@
+.facebook {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-country {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.country-filter {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    
+}
+
+.country-filter button {
+    cursor: pointer;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+}
