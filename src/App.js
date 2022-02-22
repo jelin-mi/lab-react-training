@@ -12,6 +12,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -146,7 +147,8 @@ function App() {
       {/* Iteration 13 + 14 | List and Keys - FaceBook */}
       <FaceBook />
 
-      
+      {/* Iteration 15 | Form - SignupPage */}
+      <SignupPage>Ale</SignupPage>
 
     </div>
   );
