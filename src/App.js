@@ -13,6 +13,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/RGBColorPicker';
 
 function App() {
   return (
@@ -149,6 +150,9 @@ function App() {
 
       {/* Iteration 15 | Form - SignupPage */}
       <SignupPage>Ale</SignupPage>
+
+      {/* Iteration 16 | Lifting State Up - RGBColorPicker */}
+      <RGBColorPicker />
 
     </div>
   );

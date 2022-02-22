@@ -27,7 +27,6 @@ function FaceBook() {
     setProfiles({ ...profiles, profilesData: [...selected] });
   };
 
-
   return (
     <div className="facebook">
       <h2>FaceBook</h2>

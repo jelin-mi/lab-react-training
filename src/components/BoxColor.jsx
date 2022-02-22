@@ -3,12 +3,14 @@ import './BoxColor.css';
 function BoxColor({ r, g, b, color }) {
   const divStyle = {
     backgroundColor: `rgb(${r},${g},${b})`,
-    color: `${color}`
+    color: `${color}`,
   };
 
   return (
     <div style={divStyle} className="box-color">
-      <p>rgb({r},{g},{b})</p>
+      <p>
+        rgb({r},{g},{b})
+      </p>
     </div>
   );
 }

@@ -12,11 +12,12 @@ function NumbersTable({ limit }) {
 
   return (
     <>
+      <h2>Numbers Table</h2>
       {arrayOfNumbers.map((box) => {
         return (
           <div
             key={box}
-            style={{ backgroundColor: changeColor(box), maxWidth: '30px' }}
+            style={{ backgroundColor: changeColor(box), maxWidth: '50px', margin: '0 auto'}}
           >
             {box}
           </div>
